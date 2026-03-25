@@ -1,25 +1,7 @@
-let crystal = document.getElementById("crystal");
-
-crystal.addEventListener("click", () => {
-    crystal.remove();
+document.addEventListener("mousemove", (event) => {
+    let mousex = event.clientX - 15;
+    let mousey = event.clientY - 15;
+    let elem = document.querySelector('.cursor-glow');
+    elem.style.left = mousex + 'px';
+    elem.style.top = mousey + 'px';
 });
-
-let stone = document.getElementById("stone");
-
-stone.addEventListener("click", () => {
-    stone.remove();
-});
-
-let grass = document.getElementById("grass");
-
-grass.addEventListener("click", () => {
-    grass.remove();
-});
-
-let spiral = document.getElementById("spiral");
-
-spiral.addEventListener("click", () => {
-    spiral.remove();
-});
-
-
